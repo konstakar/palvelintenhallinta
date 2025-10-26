@@ -29,10 +29,12 @@ Tiivistelmä 1. Install Salt on Debian 13 Trixie.
   Lähde: Raportin kirjoittaminen 2006-06-04 https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 
 Tehtävä a) 
-Asensin Debian 13 virtuaalikoneeseen (VirtualBox) opettajan linkkaamilla ohjeilla. Ei tullut ongelmia, kun seurasin tarkkaan ohjeita. Aikaa meni n.20min. Lähde: Karvinen, Tero: Install Debian on Virtualbox - Updated 2024 2021-01-22 https://terokarvinen.com/2021/install-debian-on-virtualbox/. 
+Asensin Debian 13 virtuaalikoneeseen (VirtualBox) opettajan linkkaamilla ohjeilla. Ei tullut ongelmia, kun seurasin tarkkaan ohjeita. Aikaa meni n.20min. 
+Lähde: Karvinen, Tero: Install Debian on Virtualbox - Updated 2024 2021-01-22 https://terokarvinen.com/2021/install-debian-on-virtualbox/. 
 
 Tehtävä b) 
-Asensin Saltin Debianiin. Oli alkuun pieniä ongelmia, lähinnä pilkkuvirheitä tuossa "Test Salt" kohdassa, koska minulla oli nettiselaimen sivu auki niin, etten tajunnut että tuo kaikki kirjoitettiin samalle riville. Sain sen toimimaan, kun tajusin muutaman yrityksen jälkeen, että tekstit tulevat samalle riville. Taas kerran, ei tullut minkäänlaisia oikeita ongelmia kun seurasin vain opettajaman linkkaamia ohjeita. Aikaa meni n.7min. Lähde: Karvinen, Tero: Install Salt on Debian 13 Trixie 2025-10-20 https://terokarvinen.com/install-salt-on-debian-13-trixie/
+Asensin Saltin Debianiin. Oli alkuun pieniä ongelmia, lähinnä pilkkuvirheitä tuossa "Test Salt" kohdassa, koska minulla oli nettiselaimen sivu auki niin, etten tajunnut että tuo kaikki kirjoitettiin samalle riville. Sain sen toimimaan, kun tajusin muutaman yrityksen jälkeen, että tekstit tulevat samalle riville. Taas kerran, ei tullut minkäänlaisia oikeita ongelmia kun seurasin vain opettajaman linkkaamia ohjeita. Aikaa meni n.7min. 
+Lähde: Karvinen, Tero: Install Salt on Debian 13 Trixie 2025-10-20 https://terokarvinen.com/install-salt-on-debian-13-trixie/
 
 Tehtävä c) 
 Testasin Linuxissa esimerkit viideistä Saltin tärkeimmästä tilafunktiosta. Hyödynsin tässä taas opettajan ohjeita. 
@@ -41,7 +43,7 @@ Testasin Linuxissa esimerkit viideistä Saltin tärkeimmästä tilafunktiosta. H
   Kolmas tilafunktioista: service. Komento "sudo salt-call --local -l info state.single service.running apache2 enable=True" starttaa Apachen (service.running) ja enable=true osuus komennosta lisää systemd autostartin, kun taas komento "sudo salt-call --local -l info state.single service.running apache2 enable=False" pysäyttää Apachen ja sen systemd autostartin.
   Neljäs tilafunktioista: user. Komento "sudo salt-call --local -l info state.single user.present konstaka03" luo uuden käyttäjän, jos sen nimistä käyttäjää ei ole. Jos on niin se ei päällekirjoita olemassa olevaa käyttäjää, vaan antaa "Comment: User konstaka03 is present and up to date". Komento "sudo salt-call --local -l info state.single user.absent konstaka03" taas poistaa käyttäjän. 
   Viides tilafunktioista: cmd. Komento "sudo salt-call --local -l info state.single cmd.run 'touch /tmp/jotain' creates="/tmp/jotain"" ajaa komennon vain jos /tmp/jotain ei ole olemassa. Mieluummin pitäisi ilmeisesti käyttää "file", "service" ja "user". Ja komentoa "cmd" vasta, jos muut eivät toimi.
-  Tähän meni varmaan 30min aikaa kun halusin tehdä mahdollisimman hyvin.
+  Tähän meni about 45min aikaa kun halusin tehdä mahdollisimman hyvin.
   
 Lähteet: Karvinen, Tero: Run Salt Command Locally 2021-10-28 https://terokarvinen.com/2021/salt-run-command-locally/ ja lisäksi käytin tekoälyä (ChatGPT) promptilla "Linuxin viisi tärkeintä Saltin tilafunktiota = pkg, file, service, user, cmd. (copy + paste ohjeissa olleet komennot). Mitä ne tekevät?"
   
@@ -49,5 +51,6 @@ Tehtävä d)
 Idempotenssi = lopputulos pysyy samana, vaikka sama komento suoritettaisiin monta kertaa. Muutoksia tehdään vain silloin kun ne ovaat tarpeellisia. Tuloksien analysointia varten ajoin komennon "sudo salt-call --local -l info state.single file.managed /tmp/esim.txt". Ekalla kerralla tulos: ID: tmp/esim.txt. Function: file.managed. Result: True. Comment: Empty file. new: file /tmp/esim.txt created". Kun taas sen ajoi uudestaan, tuli "Comment: File /tmp/esim.txt exists with proper permissions. No changes made."
 Toinen kokeilemani komento: aiemmin mainittu "sudo salt-call --local -l info state.single pkg.installed tree". Eka tulos: ID: tree. Function: pkg.installed. Result: True. Comment: The following packages were installed/updated: tree. Kun ajoin komennon uudestaan: "Comment: All specified packages are already installed".
 Idempotenssi ilmenee siten, että "Comment" sanoo jos tiedosto on jo olemassa ja sitä ei asennettu tai jos mitään muutoksia ei tehty olemassa olevaan tiedostoon. Ja "Changes" kohta on tyhjä jos mitään ei tapahtunut, kun taas jos uusi tiedosto luotiin tai uusi ohjelma ladatiin niin siinä on "New: ..."
+Meni 20-30min aikaa.
 
-Lähteet: Karvinen, Tero: Run Salt Command Locally 2021-10-28 https://terokarvinen.com/2021/salt-run-command-locally/
+Lähde: Karvinen, Tero: Run Salt Command Locally 2021-10-28 https://terokarvinen.com/2021/salt-run-command-locally/
