@@ -73,7 +73,8 @@ Loin sls:än, joka asensi paketin (package) ja loi tiedoston. sudo mkdir -p /srv
 -> tämän jälkeen sudo salt-call --local state.apply -> <img width="825" height="439" alt="image" src="https://github.com/user-attachments/assets/ad2622cf-f645-43cd-872d-aeaafd0b5cc2" /> 
 Ajoin saman komennon uudestaan ja tulos oli sama, eli mitään ei muuttunut = 
 <img width="286" height="102" alt="image" src="https://github.com/user-attachments/assets/6866ad5a-d5d7-4783-a024-0d12edbbedf2" /> (changed=1 taitaa olla minun tekemäni echo-komento hellocmd-tiedoston sisällä. 
-<img width="690" height="304" alt="image" src="https://github.com/user-attachments/assets/aa36b5a2-87e1-4f13-8950-ba8c73d1f59f" /> Tarkistin tiedoston tavallisella tiedostokomennolla myös. <img width="509" height="21" alt="image" src="https://github.com/user-attachments/assets/3edb7569-c609-4f44-88c4-36a268f72b64" />
+<img width="690" height="304" alt="image" src="https://github.com/user-attachments/assets/aa36b5a2-87e1-4f13-8950-ba8c73d1f59f" /> Tarkistin tiedoston tavallisella tiedostokomennolla myös. <img width="532" height="41" alt="image" src="https://github.com/user-attachments/assets/49e7b403-375e-44ef-8f17-d00a489f27cf" />
+
 
 Tehtävien tekemiseen meni n. 2 tuntia.
 
