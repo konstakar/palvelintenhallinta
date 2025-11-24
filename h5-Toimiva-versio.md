@@ -1,4 +1,4 @@
-Tein kaikki tehtävät (x, a, b, c ja d) kotona, omalla tietokoneellani sunnuntaina 24.11.2025.
+Tein kaikki tehtävät (x, a, b, c ja d) kotona, omalla tietokoneellani sunnuntaina 23.11.2025.
 
 x) Tiivistelmät. 
 
@@ -74,3 +74,17 @@ Nimi ja sähköpostiosoite ovat oikealla tavalla, ei tarvitse korjata. Lokissa e
 
 Tehtävä e)
 
+<img width="759" height="19" alt="image" src="https://github.com/user-attachments/assets/5834adc3-9e15-4e2e-bfb1-f3dde41a512d" /> <img width="753" height="21" alt="image" src="https://github.com/user-attachments/assets/3201d851-3cb2-4d7e-8b82-fbfbcecd9d95" />
+
+ <img width="117" height="66" alt="image" src="https://github.com/user-attachments/assets/aa07e279-5632-4ac3-a19d-af6fcea1cb33" />
+init.sls muokattu. Niin kuin myös top.sls  <img width="738" height="37" alt="image" src="https://github.com/user-attachments/assets/4e611f7a-6ef3-430f-a27e-8f05828784b5" />
+
+
+<img width="237" height="113" alt="image" src="https://github.com/user-attachments/assets/e288b2b0-b425-4ce5-bdf6-f4d4d5ee3510" />
+<img width="1053" height="345" alt="image" src="https://github.com/user-attachments/assets/9b17080a-939b-4afd-b641-fc5cd92eab93" />
+
+----------
+
+Lähteet: Pro Git: 1.3 Getting Started - What is Git? https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F 
+Laurynovich, Aliaksei 2024: Difference Between Executing Multiple Commands with && and ;. https://www.baeldung.com/linux/difference-ampersand-semicolon
+Github: Git Add, Git Commit, Git Pull, Git Push.  https://github.com/git-guides/git-add https://github.com/git-guides/git-commit https://github.com/git-guides/git-pull https://github.com/git-guides/git-push
