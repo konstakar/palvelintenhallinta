@@ -85,6 +85,8 @@ init.sls muokattu. Niin kuin myös top.sls  <img width="738" height="37" alt="im
 
 ----------
 
+f) projektipari hankittu: Antti Autere
+
 Lähteet: Pro Git: 1.3 Getting Started - What is Git? https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F 
 Laurynovich, Aliaksei 2024: Difference Between Executing Multiple Commands with && and ;. https://www.baeldung.com/linux/difference-ampersand-semicolon
 Github: Git Add, Git Commit, Git Pull, Git Push.  https://github.com/git-guides/git-add https://github.com/git-guides/git-commit https://github.com/git-guides/git-pull https://github.com/git-guides/git-push
