@@ -1,4 +1,4 @@
-Tein kaikki tehtävät (x, a, b, c ja d) kotona, omalla tietokoneellani sunnuntaina 23.11.2025.
+Tein kaikki tehtävät (x, a, b, c, d ja e) kotona, omalla tietokoneellani sunnuntaina 23.11.2025.
 
 x) Tiivistelmät. 
 
